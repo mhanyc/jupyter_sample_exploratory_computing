@@ -4,7 +4,7 @@ PIP ?= $(VE)/bin/pip
 
 create: 
 	rm -rf $(VE)
-	python3 -m venv $(VE)
+	/usr/bin/python3 -m venv $(VE)
 	$(PIP) install wheel==$(WHEEL_VERSION)
 	$(PIP) install --use-wheel --requirement requirements.txt
 
