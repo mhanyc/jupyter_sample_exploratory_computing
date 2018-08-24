@@ -9,4 +9,4 @@ create:
 	$(PIP) install --use-wheel --requirement requirements.txt
 
 install_kernel:
-	ipython kernel install --user --name=exploratory_computing_with_python
+	$(VE)/bin/ipython kernel install --user --name=exploratory_computing_with_python
